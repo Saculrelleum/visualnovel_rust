@@ -1,0 +1,32 @@
+char mc {
+    name = "luke",
+    image = "luke.png",
+    color = "red",
+}
+
+label start {
+    scene "pic1.png"
+    mc "Hello, my name is Luke."
+    mc "I'm a student at the University of Waterloo."
+    mc "I'm currently studying Computer Science."
+    scene "luke.png"
+    mc "I'm currently studying Computer Science."
+
+
+    jump room
+
+}
+
+screen room {
+    button {
+        text = "lol"
+        goto start
+
+    }
+
+    imagebutton {
+        idle = "luke.png"
+        hover = "luke.png"
+        goto start
+    }
+}
